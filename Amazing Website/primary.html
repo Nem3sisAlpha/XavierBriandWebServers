@@ -65,11 +65,11 @@
     
         <script>
             function alertbtn() {
-                alert("YOU'VE BEEN ACCUSED OF STEALING PICTURES...\nTHAT IS A NO NO")
+                alert("YOU'VE BEEN ACCUSED OF STEALING PICTURES...\nTHAT IS A NO NO");
             }
 
             function clickin() {
-                document.getElementById("Nope").innerHTML = "CLIIICK MEEEE OOOOOOOOOON"
+                document.getElementById("Nope").innerHTML = "CLIIICK MEEEE OOOOOOOOOON";
             }
 
             function visibility() {
@@ -82,11 +82,30 @@
                 }
             }
 
-            function clickin() {
-                document.getElementById("Nope").src = "CLIIICK MEEEE OOOOOOOOOON"
+            function imgchg() {
+                document.getElementById("Game").src = "https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%204/Ori2.jpg?raw=true";
             }
-        </script>
 
+            function btntxtchg(version2) {
+                version2.innerHTML = "You really needed to do that for your own satisfaction right?";
+            }
+
+            function requried() {
+                document.getElementById("focus").innerHTML = ("This field is required");
+            }
+            
+            function ajax() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("ajax").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "ajax.txt", true);
+                xhttp.send();
+            }
+
+        </script>
 
         <button onclick="alertbtn()">COPYRIGHT STRIKE</button>
         
@@ -94,7 +113,32 @@
 
         <button onclick="clickin()">CLICK ON MEEEEEE (Sang the same way as Take On Me)</button>
         <p id="Nope" ></p>
+
+        <button onclick="visibility()">YEET IN OR OUT?</button>
+        </br></br>
+        <img id="AngryPingu" src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%204/Angry%20Pingu.jpg?raw=true" width="671" height="417"/>
+
+        </br></br></br></br>
+
+        <button onclick="imgchg()">See another image of this beautiful game?</button>
+        </br></br>
+        <img id="Game" src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%204/Ori1.jpg?raw=true" width="1080" height="720"/>
+
+        </br></br></br></br>
+
+        <button onclick="btntxtchg(this)">You did not see me.....</button>
     
+        </br></br></br></br>
+
+        <p>Do you like this website?</p>
+        <input type="text" onblur="requried()">
+        <p id="focus"></p>
+
+        </br></br></br></br>
+
+        <p id="ajax">Do you wat to see what AJAX is capable of?</p>
+        <button onclick="ajax()">Magic!</button>
+
         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
 

@@ -3,17 +3,10 @@
 <html>
 <body>
 
-Welcome <?= echo $_POST["name"]; ?><br>
+<p>Welcome <?=  $_POST["name"]; ?><br></p>
 
-<?=
-if ($_POST["Yes"]){
-    echo "You like photography!";
-}
-else {
-    echo "What are you doing here if you don't like photography?";
-}
 
-?>
+?></p>
 
 
 </body>

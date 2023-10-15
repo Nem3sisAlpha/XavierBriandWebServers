@@ -3,7 +3,6 @@
 <html>
 <body>
 
-
 Welcome <?= echo $_POST["name"]; ?><br>
 
 <?=

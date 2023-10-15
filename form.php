@@ -4,8 +4,17 @@
 <body>
 
 
-<p><?= var_dump($_GET)?></p>
-<p><?= var_dump($_POST)?></p>
+Welcome <?= echo $_POST["name"]; ?><br>
+
+<?=
+if ($_POST["Yes"]){
+    echo "You like photography!";
+}
+else {
+    echo "What are you doing here if you don't like photography?";
+}
+
+?>
 
 
 </body>

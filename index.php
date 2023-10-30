@@ -30,7 +30,7 @@
         <label for="pictures">Select Month to see the amount of pictures taken per year:</label><br/>
         <select id="pictureinfo" name="pictureinfo">
             <?php
-                while($row = $result->fetch_assoc()) 
+                foreach($result as $row) 
                 {
                     echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']}</option>\n";
                 }

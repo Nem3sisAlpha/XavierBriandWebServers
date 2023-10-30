@@ -37,7 +37,7 @@
                 mysqli_close($conn);
             ?>
         </select>
-        <br/>
+        </br></br>
         <input type="submit" value="submit"/>  
     </form>
 

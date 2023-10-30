@@ -16,7 +16,7 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "select * from Pictures where pitcures_id={$rownum};";
+            $sql = "select * from Pictures where pictures_id='{$rownum}';";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>

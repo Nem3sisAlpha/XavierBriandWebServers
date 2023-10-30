@@ -6,7 +6,7 @@
         <?php 
             $server = "localhost";
             $username = "php";
-            $password = "password";
+            $password = "passwor";
             $database = "Pictures_Taken";
             $conn = mysqli_connect($server, $username, $password, $database);
 
@@ -25,7 +25,7 @@
         <img src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%201/VAX05085.jpg?raw=true" width="800" height="1200"/>
         <h2>You must be judged by the judging bird before entering this website</h2>
 
-        <h3>Data base: </h3>
+        <h3>Recorded amount of pictures taken monthly per year</h3>
         <form action="result.php" method="get">
         <label for="pictures">Select Month to see the amount of pictures taken per year:</label><br/>
         <select id="pictures" name="pictures">
@@ -57,7 +57,7 @@
                 ?>
             </select></br></br>
             <label for="pics">Enter the new number of pictures for the month and year</label><br/>
-            <input type="number" required id="2023pics" name="2023pics" /><br /><br />
+            <input type="number" required id="2023pics" name="2023pics" /><br/><br/>
             <input type="submit" value="submit"/>  
         </form>
 

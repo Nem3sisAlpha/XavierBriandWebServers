@@ -4,7 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $rownum = (int)($_GET["picture1"]);
+            $rownum = (int)($_GET["picturechg"]);
             $chg = (int)($_GET["2023pics"]);
             $server = "localhost";
             $username = "php";
@@ -27,9 +27,9 @@
     <p><?php mysqli_error($conn)?></p>
     
     <?php
-    foreach($result as $rownum)
+    foreach($result as $row)
             {
-                echo "This month has: {$rownum['2023pics']} pictures in 2023";
+                echo "This month has: {$row['2023pics']} pictures in 2023";
             }
             mysqli_close($conn);
     ?>

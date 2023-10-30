@@ -4,7 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $rownum = (int)($_GET["pictures"]);
+            $rownum = (int)($_GET["pictureinfo"]);
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -24,9 +24,9 @@
     You selected Month <?php $rownum ?></br>
     <p><?php mysqli_error($conn)?></p>
     <?php
-    foreach($result as $rownum )
+    foreach($result as $row)
             {
-                echo "This month has: {$rownum['2019pics']} pictures in 2019, {$rownum ['2020pics']} pictures in 2020, {$rownum['2021pics']} pictures in 2021, {$rownum['2022pics']} pictures in 2022, and {$rownum['2023pics']} pictures in 2023";
+                echo "This month has: {$row['2019pics']} pictures in 2019, {$row['2020pics']} pictures in 2020, {$row['2021pics']} pictures in 2021, {$row['2022pics']} pictures in 2022, and {$row['2023pics']} pictures in 2023";
             }
             mysqli_close($conn);
     ?>

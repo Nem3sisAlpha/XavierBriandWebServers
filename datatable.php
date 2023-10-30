@@ -21,13 +21,16 @@
     </head>
 <body>
     </h3>Data Table</h3>
-        <label for="Pictures">Select the month to see the number of pictures taken per year:</label><br/>
-        <select id="pictures_table" name="pictures_table">
-            <?php
-            foreach($result as $row) {
-                echo "Month: {$row["pictures_id"]} || Pictures taken in 2019: {$row["2019pics"]} || Pictures taken in 2020: {$row["2020pics"]} || Pictures taken in 2021: {$row["2021pics"]} || Pictures taken in 2022: {$row["2022pics"]} || Pictures taken in 2023: {$row["2023pics"]}\n"; }
-            
-            ?>
-        </select>
+        <form action="result.php" method="get">
+            <label for="Pictures">Select the month to see the number of pictures taken per year:</label><br/>
+            <select id="pictures_table" name="pictures_table">
+                <?php
+                foreach($result as $row) {
+                    echo "<option value='{$row['pictures_id']}'> Month: {$row['anime_top_number']}\n";
+                }
+                mysqli_close($conn)
+                ?>
+            </select>
+        </form>
 </body>
 </html>

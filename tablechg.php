@@ -5,6 +5,7 @@
         <title>SQL - Results</title>
         <?php 
             $rownum = (int)($_GET["Pictures"]);
+            $chg = (int)($_GET["2023pics"]);
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -16,13 +17,15 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "select * from Pictures where pitcures_id={$rownum};";
+            $sql = "UPDATE Pictures SET 2023pics = {$chg} where pictures_id={$rownum};";
+            $result = mysqli_query($conn, $sql);
+            $sql = "select * from top where pictures_id={$rownum};";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
 <body>
-    You selected Month <?php $rownum ?></br>
     <p><?php mysqli_error($conn)?></p>
+    
     <?php
     foreach($result as $row)
             {

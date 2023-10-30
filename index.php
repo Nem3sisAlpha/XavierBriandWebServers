@@ -61,15 +61,7 @@
             <input type="submit" value="submit"/>  
         </form>
 
-
-
-
-
-
-
-
-
-
+        </br></br>
 
         <form action="form.php" method="post">
             You may enter your name here <input type="text" id="name" name="name" required> </br></br>

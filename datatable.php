@@ -21,7 +21,6 @@
     </head>
 <body>
     </h3>Data Table</h3>
-    <form action="result.php" method="get">
         <label for="Pictures">Select the month to see the number of pictures taken per year:</label><br/>
         <select id="pictures_table" name="pictures_table">
             <?php

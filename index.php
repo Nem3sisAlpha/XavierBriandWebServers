@@ -45,7 +45,7 @@
 
 
         <form action="tablechg.php" method="get">
-            <label for="pictures1">Select anime to change in data base:</label><br/>
+            <label for="pictures1">Select Month to see the amount of pictures taken for the year 2023</label><br/>
             <select id="pictures1" name="pictures1">
                 <?php
                     foreach($result as $row) 

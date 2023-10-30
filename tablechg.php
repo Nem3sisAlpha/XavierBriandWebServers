@@ -27,9 +27,9 @@
     <p><?php mysqli_error($conn)?></p>
     
     <?php
-    foreach($result as $row)
+    foreach($result as $rownum)
             {
-                echo "This month has: {$row['2019pics']} pictures in 2019, {$row['2020pics']} pictures in 2020, {$row['2021pics']} pictures in 2021, {$row['2022pics']} pictures in 2022, and {$row['2023pics']} pictures in 2023";
+                echo "This month has: {$rownum['2023pics']} pictures in 2023";
             }
             mysqli_close($conn);
     ?>

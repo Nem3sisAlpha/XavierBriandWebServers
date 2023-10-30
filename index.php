@@ -25,21 +25,21 @@
         <img src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%201/VAX05085.jpg?raw=true" width="800" height="1200"/>
         <h2>You must be judged by the judging bird before entering this website</h2>
 
-        <h3>Recorded amount of pictures taken monthly per year</h3>
-        <form action="result.php" method="get">
-        <label for="pictures">Select Month to see the amount of pictures taken per year:</label><br/>
-        <select id="pictureinfo" name="pictureinfo">
-            <?php
-                foreach($result as $row) 
-                {
-                    echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']}</option>\n";
-                }
-                mysqli_close($conn);
-            ?>
-        </select>
+            <h3>Recorded amount of pictures taken monthly per year</h3>
+            <form action="result.php" method="get">
+            <label for="pictures">Select Month to see the amount of pictures taken per year:</label><br/>
+            <select id="pictureinfo" name="pictureinfo">
+                <?php
+                    foreach($result as $row) 
+                    {
+                        echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']}</option>\n";
+                    }
+                    mysqli_close($conn);
+                ?>
+            </select>
             </br></br>
-        <input type="submit" value="submit"/>  
-    </form>
+            <input type="submit" value="submit"/>  
+        </form>
 
     </br></br>
 

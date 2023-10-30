@@ -6,7 +6,7 @@
         <?php 
             $server = "localhost";
             $username = "php";
-            $password = "passwor";
+            $password = "password";
             $database = "Pictures_Taken";
             $conn = mysqli_connect($server, $username, $password, $database);
 
@@ -28,7 +28,7 @@
         <h3>Recorded amount of pictures taken monthly per year</h3>
         <form action="result.php" method="get">
         <label for="pictures">Select Month to see the amount of pictures taken per year:</label><br/>
-        <select id="pictures" name="pictures">
+        <select id="pictureinfo" name="pictureinfo">
             <?php
                 foreach($result as $row) 
                 {
@@ -46,7 +46,7 @@
 
         <form action="tablechg.php" method="get">
             <label for="pictures1">Select Month to see the amount of pictures taken for the year 2023</label><br/>
-            <select id="pictures1" name="pictures1">
+            <select id="picturechg" name="picturechg">
                 <?php
                     foreach($result as $row) 
                     {

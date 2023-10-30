@@ -4,7 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $rownum = (int)($_GET["pictures"]);
+            $rownum = (int)($_GET["pictureinfo"]);
             $server = "localhost";
             $username = "php";
             $password = "password";

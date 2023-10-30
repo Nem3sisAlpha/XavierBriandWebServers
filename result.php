@@ -2,8 +2,9 @@
 
 <html>
     <head>
-        <title>SQL Data Table</title>
+        <title>SQL - Results</title>
         <?php 
+            $rownum = (int)($_GET["Pictures"]);
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -15,7 +16,7 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "select * from Pictures;";
+            $sql = "select * from Pictures where pitcures_id={$rownum};";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>

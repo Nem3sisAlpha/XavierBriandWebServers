@@ -34,7 +34,6 @@
                 {
                     echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']}</option>\n";
                 }
-                mysqli_close($conn);
             ?>
         </select>
             </br></br>

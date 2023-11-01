@@ -19,12 +19,12 @@
             
             $sql = "UPDATE Pictures SET 2023pics = {$chg} where pictures_id={$rownum};";
             $result = mysqli_query($conn, $sql);
+
             $sql = "select * from top where pictures_id={$rownum};";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
 <body>
-    <p><?php mysqli_error($conn)?></p>
     
     <?php
     foreach($result as $row)

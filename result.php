@@ -21,7 +21,7 @@
         ?>
     </head>
 <body>
-    You selected Month <?php $rownum ?></br>
+    You selected Month <?php echo $rownum ?></br>
     <p><?php mysqli_error($conn)?></p>
     <?php
     foreach($result as $row)

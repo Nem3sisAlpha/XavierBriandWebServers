@@ -70,10 +70,9 @@
             </br>
             <input type="button" value="Toggle">
             </br>
-            <input type="button" value="Blink">
+            <input type="button" value="High">
             </br>
-            <input type="radio" value="0">
-            <input type="radio" value="1">
+            <input type="button" value="Low">
         </form>
 
         </br></br>

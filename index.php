@@ -10,7 +10,7 @@
             $database = "Pictures_Taken";
             $conn = mysqli_connect($server, $username, $password, $database);
             
-            $raw = `./bme280`;
+            $raw = `./bme280/bme280`;
             $deserialized = json_decode($raw, true);
             var_dump($deserialized);
 

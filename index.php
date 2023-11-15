@@ -63,13 +63,14 @@
         </br></br>
 
 
-         <form action="answer.php" method="get">
+        <form action="answer.php" method="get">
             Do you want to control an LED?
             Press this button:
             <input type="button" value="Toggle">
             <input type="button" value="Blink">
+        </form>
 
-         </form>  
+        </br></br>
             
         <form action="form.php" method="post">
             You may enter your name here <input type="text" id="name" name="name" required> </br></br>

@@ -80,6 +80,13 @@
             <input type="submit" value="Submit"> </br></br>
             <input type="button" onclick="location.href='primary.html';" value="Go to the next page">
         </form>
+        <form action="answer.php" method="get">
+            Do you want to control an LED?
+            Press this button:
+            <input type="button" value="Toggle">
+            <input type="button" value="Blink">
+
+        <form>  
     </body>
 
 

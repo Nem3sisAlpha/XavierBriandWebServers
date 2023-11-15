@@ -100,11 +100,11 @@
       
         if(isset($_POST['inf'])) { 
             echo "Here is the requested information:";
-            echo 'The used sensor is: $deserialized["sensor"]';
-            echo 'The humidity levels were at $deserialized["humidity"]';
-            echo 'The pressure is at $deserialized["pressure"]';
-            echo 'The temperature is at $deserialized["temperature"]';
-            echo 'The altitude is at $deserialized["altitude"]';
+            echo "The used sensor is: $deserialized["sensor"]";
+            echo "The humidity levels were at $deserialized["humidity"]";
+            echo "The pressure is at $deserialized["pressure"]";
+            echo "The temperature is at $deserialized["temperature"]";
+            echo "The altitude is at $deserialized["altitude"]";
         } 
         ?>
         

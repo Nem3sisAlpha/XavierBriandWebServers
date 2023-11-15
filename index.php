@@ -77,16 +77,16 @@
             echo `gpio toggle 26`;
         } 
         ?>
-        
+        </br></br>
         <form method="post">
             Do you want to control an LED?
             </br>
             Press one of these buttons:
             </br>
             <input type="submit" name="tgl" value="Toggle">
-            </br>
+            </br></br>
             <input type="submit" name="HI" value="High">
-            </br>
+            </br></br>
             <input type="submit" name="LO" value="Low">
         </form>
 

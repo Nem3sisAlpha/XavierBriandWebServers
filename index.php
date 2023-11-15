@@ -62,6 +62,15 @@
 
         </br></br>
 
+
+         <form action="answer.php" method="get">
+            Do you want to control an LED?
+            Press this button:
+            <input type="button" value="Toggle">
+            <input type="button" value="Blink">
+
+         </form>  
+            
         <form action="form.php" method="post">
             You may enter your name here <input type="text" id="name" name="name" required> </br></br>
             You also may enter your email address here <input type="text" id="email" name="email" required> </br></br>
@@ -80,13 +89,6 @@
             <input type="submit" value="Submit"> </br></br>
             <input type="button" onclick="location.href='primary.html';" value="Go to the next page">
         </form>
-        <form action="answer.php" method="get">
-            Do you want to control an LED?
-            Press this button:
-            <input type="button" value="Toggle">
-            <input type="button" value="Blink">
-
-        <form>  
     </body>
 
 

@@ -12,7 +12,6 @@
             
             $raw = `./bme280/bme280`;
             $deserialized = json_decode($raw, true);
-            var_dump($deserialized);
 
             // Check for successful connection
             if (!$conn) {

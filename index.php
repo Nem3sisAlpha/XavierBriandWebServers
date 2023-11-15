@@ -68,11 +68,11 @@
             </br>
             Press one of these buttons:
             </br>
-            <input type="button" value="Toggle">
+            <input type="button" name="tgl" value="Toggle">
             </br>
-            <input type="button" value="High">
+            <input type="button" name="HI" value="High">
             </br>
-            <input type="button" value="Low">
+            <input type="button" name="LO" value="Low">
         </form>
 
         </br></br>

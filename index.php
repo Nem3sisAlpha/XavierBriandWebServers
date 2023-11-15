@@ -9,6 +9,10 @@
             $password = "password";
             $database = "Pictures_Taken";
             $conn = mysqli_connect($server, $username, $password, $database);
+            
+            $raw = `./bme280`;
+            $deserialized = json_decode($raw, true);
+            var_dump($deserialized)
 
             // Check for successful connection
             if (!$conn) {
@@ -88,8 +92,22 @@
             <input type="submit" name="HI" value="High">
             </br></br>
             <input type="submit" name="LO" value="Low">
+            </br></br>
+            <input type="submit" name="inf" value="Info">
         </form>
-
+        </br></br>
+        <?php
+      
+        if(isset($_POST['inf'])) { 
+            echo "Here are the requested information";
+            echo 'The used sensor is: $deserialized["sensor"]';
+            echo 'The humidity levels were at $deserialized["humidity"]';
+            echo 'The pressure is at $deserialized["pressure"]';
+            echo 'The temperature is at $deserialized["temperature"]';
+            echo 'The altitude is at $deserialized["altitude"]';
+        } 
+        ?>
+        
         </br></br>
             
         <form action="form.php" method="post">

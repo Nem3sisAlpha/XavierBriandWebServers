@@ -65,13 +65,16 @@
         <?php
       
         if(isset($_POST['HI'])) { 
-            echo "The value has been set to high!"; 
+            echo "The value has been set to high!";
+            echo `gpio write 26 1`;
         } 
         if(isset($_POST['LO'])) { 
-            echo "The value has been set to low"; 
+            echo "The value has been set to low!";
+            echo `gpio write 26 0`;
         } 
         if(isset($_POST['tgl'])) { 
             echo "The value is now toggling!"; 
+            echo `gpio toggle 26`;
         } 
         ?>
         

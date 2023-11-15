@@ -62,17 +62,32 @@
 
         </br></br>
 
-
-        <form action="answer.php" method="get">
+        <?php
+      
+        if(isset($_POST['HI'])) { 
+            echo "The value has been set to high!"; 
+            echo `gpio write 26 1`
+        } 
+        if(isset($_POST['LO'])) { 
+            echo "The value has been set to low"; 
+            echo `gpio write 26 0`;
+        } 
+        if(isset($_POST['tgl'])) { 
+            echo "The value has been set to low"; 
+            echo `gpio write 26 0`;
+        } 
+        ?>
+        
+        <form method="post">
             Do you want to control an LED?
             </br>
             Press one of these buttons:
             </br>
-            <input type="button" name="tgl" value="Toggle">
+            <input type="submit" name="tgl" value="Toggle">
             </br>
-            <input type="button" name="HI" value="High">
+            <input type="submit" name="HI" value="High">
             </br>
-            <input type="button" name="LO" value="Low">
+            <input type="submit" name="LO" value="Low">
         </form>
 
         </br></br>

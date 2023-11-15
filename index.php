@@ -65,9 +65,15 @@
 
         <form action="answer.php" method="get">
             Do you want to control an LED?
-            Press this button:
+            </br>
+            Press one of these buttons:
+            </br>
             <input type="button" value="Toggle">
+            </br>
             <input type="button" value="Blink">
+            </br>
+            <input type="radio" value="0">
+            <input type="radio" value="1">
         </form>
 
         </br></br>

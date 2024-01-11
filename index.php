@@ -35,7 +35,7 @@
             <?php
                 foreach($result as $row) 
                 {
-                    echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']}</option>\n";
+                    echo "<option value='{$row['picture_id']}'> Month: {$row['picture_id']}</option>\n";
                 }
             ?>
         </select>
@@ -52,7 +52,7 @@
                 <?php
                     foreach($result as $row) 
                     {
-                        echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']} || Year: 2023 </option>\n";
+                        echo "<option value='{$row['picture_id']}'> Month: {$row['picture_id']} || Year: 2023 </option>\n";
 
                     }
                     mysqli_close($conn);

@@ -17,10 +17,10 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "UPDATE Pictures SET 2023pics = {$chg} where pictures_id={$rownum};";
+            $sql = "UPDATE Pictures SET 2023pics = {$chg} where picture_id={$rownum};";
             $result = mysqli_query($conn, $sql);
 
-            $sql = "select * from Pictures where pictures_id={$rownum};";
+            $sql = "select * from Pictures where picture_id={$rownum};";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>

@@ -22,11 +22,9 @@
 <body> 
     <p>
         
-  
-
     <?php echo $_SERVER['REMOTE_ADDR']; ?></br>
 
-    <?php header('Location: https://www.google.ca/search?q='$_POST["searchbar"]); ?>
+    <?php header('Location: https://www.google.ca/search?q=["searchbar"]'); ?>
 
     <?php mysqli_error($conn)?></p>
     

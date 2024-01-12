@@ -4,7 +4,6 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $content = $_GET["searchbar"];
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -23,11 +22,10 @@
 <body> 
     <p>
         
-    <?php echo $content; ?></br>
+    <?php echo $_POST["searchbar"]; ?></br>
 
     <?php echo $_SERVER['REMOTE_ADDR']; ?></br>
 
-    
     <?php mysqli_error($conn)?></p>
     
 </body>

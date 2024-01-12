@@ -4,7 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $content = "$_GET["searchbar"]";
+            $content = $_GET["searchbar"];
             $server = "localhost";
             $username = "php";
             $password = "password";

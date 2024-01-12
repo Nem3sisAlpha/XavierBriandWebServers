@@ -4,6 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
+            $search = $_POST["searchbar"]
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -24,7 +25,7 @@
         
     <?php echo $_SERVER['REMOTE_ADDR']; ?></br>
 
-    <?php header('Location: https://www.google.ca/search?q=["searchbar"]'); ?>
+    <?php header('Location: https://www.google.ca/search?q='. $search); ?>
 
     <?php mysqli_error($conn)?></p>
     

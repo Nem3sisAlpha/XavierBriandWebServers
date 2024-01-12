@@ -4,7 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-           $search = $_POST["searchbar"];
+           $search = htmlspecialchars($_POST["searchbar"]);
             $ip     = $_SERVER['REMOTE_ADDR'];
             $server = "localhost";
             $username = "php";

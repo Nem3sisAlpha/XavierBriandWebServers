@@ -31,17 +31,8 @@
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <input type="text" placeholder="Search..">
+        <input id="searchbar" type="text" placeholder="Search..">
         </div>
-
-        <select id="pictureinfo" name="pictureinfo">
-            <?php
-                foreach($result as $row) 
-                {
-                    echo "<option value='{$row['picture_id']}'> Month: {$row['picture_id']}</option>\n";
-                }
-            ?>
-        </select>
-            </br></br>
+        </br></br>
         <input type="submit" value="submit"/>  
     </form>

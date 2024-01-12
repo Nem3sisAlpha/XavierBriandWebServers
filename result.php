@@ -4,7 +4,7 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $rownum = (int)($_GET["pictureinfo"]);
+            $content = (int)($_GET["searchbar"]);
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -16,20 +16,17 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "select * from Pictures where picture_id='{$rownum}';";
+            $sql = "select * from Pictures';";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
-<body>
-    You selected Month <?php echo $rownum ?></br>
-    <p><?php mysqli_error($conn)?></p>
-    <?php
-    foreach($result as $row)
-            {
-                echo "This month has: {$row['2019pics']} pictures in 2019, {$row['2020pics']} pictures in 2020, {$row['2021pics']} pictures in 2021, {$row['2022pics']} pictures in 2022, and {$row['2023pics']} pictures in 2023";
-            }
-            mysqli_close($conn);
-    ?>
+<body> 
+    <p>
+        
+    <?php echo $content ?></br>
 
+    
+    <?php mysqli_error($conn)?></p>
+    
 </body>
 </html>

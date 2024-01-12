@@ -5,7 +5,7 @@
         <title>SQL - Results</title>
         <?php 
            $search = $_POST["searchbar"];
-           /* $ip     = $_SERVER['REMOTE_ADDR'];
+            $ip     = $_SERVER['REMOTE_ADDR'];
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -17,12 +17,10 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "insert into phishing ip values $ip;";
+            $sql = "insert into phishing (ip, search) values ('$ip', '$search');";
             $result = mysqli_query($conn, $sql);
 
-            $sql = "insert into phishing search values ;";
-            $result = mysqli_query($conn, $sql);*/
-        ?>
+            ?>
     </head>
 <body> 
     <p>

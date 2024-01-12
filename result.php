@@ -22,7 +22,7 @@
 <body> 
     <p>
         
-    <?php echo $_POST["searchbar"]; ?></br>
+    <?php echo $_POST["topnav"]; ?></br>
 
     <?php echo $_SERVER['REMOTE_ADDR']; ?></br>
 

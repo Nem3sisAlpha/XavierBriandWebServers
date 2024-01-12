@@ -4,8 +4,8 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-          /* $search = $_POST["searchbar"];
-            $ip     = $_SERVER['REMOTE_ADDR'];
+           $search = $_POST["searchbar"];
+           /* $ip     = $_SERVER['REMOTE_ADDR'];
             $server = "localhost";
             $username = "php";
             $password = "password";

@@ -4,8 +4,8 @@
     <head>
         <title>SQL - Results</title>
         <?php 
-            $search = $_POST["searchbar"];
-            $ip     = (int)($_SERVER['REMOTE_ADDR']);
+          /* $search = $_POST["searchbar"];
+            $ip     = $_SERVER['REMOTE_ADDR'];
             $server = "localhost";
             $username = "php";
             $password = "password";
@@ -20,8 +20,8 @@
             $sql = "insert into phishing ip values $ip;";
             $result = mysqli_query($conn, $sql);
 
-            $sql = "insert into phishing search values $search;";
-            $result = mysqli_query($conn, $sql);
+            $sql = "insert into phishing search values ;";
+            $result = mysqli_query($conn, $sql);*/
         ?>
     </head>
 <body> 

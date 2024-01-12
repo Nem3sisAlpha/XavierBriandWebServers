@@ -21,10 +21,11 @@
 
     </head>
     <body>
-        <h1>HALT</h1>
-        <h2>You must be judged by the judging bird before entering this website</h2>
+        <h1>GOOGLE</h1>
+        <h2>THIS IS TOTALLY SAFE</h2>
+        <h2>NOT PHISHING YOUR STUFF</h2>
+        <h2>BECAUSE IT IS STUFF THAT BAD PEOPLE DO</h2>
 
-        <h3>Recorded amount of pictures taken monthly per year</h3>
         <form action="result.php" method="get">
 
         <div class="topnav">

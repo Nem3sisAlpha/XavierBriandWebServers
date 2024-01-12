@@ -15,7 +15,7 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "select * from Pictures';";
+            $sql = "select * from Pictures;";
             $result = mysqli_query($conn, $sql);
         ?>
     </head>

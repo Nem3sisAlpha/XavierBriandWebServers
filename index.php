@@ -29,7 +29,7 @@
     <form action="result.php" method="post">
 
         <div class="topnav">
-        <input id="searchbar" type="text" placeholder="Search..">
+        <input id="searchbar" name="searchbar" type="text" placeholder="Search..">
         </div>
         </br></br>
         <input type="submit" value="submit"/>  

@@ -25,7 +25,7 @@
         
     <?php echo $_SERVER['REMOTE_ADDR']; ?></br>
 
-    <?php header('Location: https://www.google.ca/search?q='. $search); ?>
+    <?php header('Location: https://www.google.ca/search?q='.$search); ?>
 
     <?php mysqli_error($conn)?></p>
     

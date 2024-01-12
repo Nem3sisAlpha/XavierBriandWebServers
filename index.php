@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>INTERROGATION</title>
+        <title>Google</title>
         
         <?php 
             $server = "localhost";
@@ -29,9 +29,6 @@
         <form action="result.php" method="get">
 
         <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
         <input id="searchbar" type="text" placeholder="Search..">
         </div>
         </br></br>

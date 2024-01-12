@@ -23,7 +23,7 @@
 <body> 
     <p>
         
-    <?php echo $content ?></br>
+    <?php echo $content; ?></br>
 
     
     <?php mysqli_error($conn)?></p>

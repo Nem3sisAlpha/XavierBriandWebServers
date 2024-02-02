@@ -31,7 +31,7 @@
           $rank = 1;
 
           if (mysqli_num_rows($result)) {
-            while ($row = mysqli_fetch_array($result)) {
+            while ($row = mysqli_fetch_assoc($result)) {
               echo "<td>{$rank}</td>
               <td>{$row['name']}</td>
               <td>{$row['score']}</td>";

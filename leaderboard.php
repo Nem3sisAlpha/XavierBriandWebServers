@@ -34,9 +34,8 @@
             while ($row = mysqli_fetch_array($result)) {
               echo "<td>{$rank}</td>
               <td>{$row['name']}</td>
-              <td>{$row['score']}</td>";
+              <td>{$row['score']}</td>\n";
               $rank++;
-            echo "</br>";
             }
           }
         ?>

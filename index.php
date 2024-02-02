@@ -11,10 +11,11 @@
             
         <form action="game.php" method="post">
         <select>
-            <option value="1">Easy</option>
-            <option value="2">Medium</option>
-            <option value="3">Hard</option>
-            <option value="4">Custom</option>
+            <option value="1">Choose option</option>
+            <option value="2">Easy</option>
+            <option value="3">Medium</option>
+            <option value="4">Hard</option>
+            <option value="5">Custom</option>
         </select>
         </br></br>
         <h4>For the Leaderboard, click here!</h4>

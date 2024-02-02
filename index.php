@@ -13,8 +13,10 @@
             <option value="2">Medium</option>
             <option value="3">Hard</option>
             <option value="4">Custom</option>
-        </select> </br></br>
-
+        </select>
+        </br></br>
+        <h4>For the Leaderboard, click here!</h4>
+        <a href="leaderboard.php">Next Page</a>  
             
     <form action="result.php" method="post">
 

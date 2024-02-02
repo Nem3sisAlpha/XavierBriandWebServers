@@ -8,6 +8,8 @@
         <h4>In here you will either be able to challenge or go easy on yourself as this game can be either really hard, or really easy depending on the settings you chose</h4>
         </br></br>
         <h4>Choose your game difficulty<h4>
+            
+        <form action="game.php" method="post">
         <select>
             <option value="1">Easy</option>
             <option value="2">Medium</option>
@@ -17,15 +19,9 @@
         </br></br>
         <h4>For the Leaderboard, click here!</h4>
         <a href="leaderboard.php">Next Page</a>  
-            
-    <form action="result.php" method="post">
-
-        <div class="topnav">
-        <input id="searchbar" name="searchbar" type="text" placeholder="Search..">
-        </div>
-        </br></br>
+        
         <input type="submit" value="submit"/>  
 
-    </form>
+        </form>
     </body>
 </html>

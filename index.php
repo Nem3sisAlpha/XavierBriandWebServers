@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Google</title>
+        <title>Simon Says</title>
     </head>
     <body>
-        <h1>GOOGLE</h1>
-        <h2>THIS IS TOTALLY SAFE</h2>
-        <h2>NOT PHISHING YOUR STUFF</h2>
-        <h2>BECAUSE IT IS STUFF THAT BAD PEOPLE DO</h2>
+        <h1>Welcome to the new revamped version of the Simon Says game!</h1>
+        <h5>In here you will either be able to challenge or go easy on yourself as this game can be either really hard, or really easy depending on the settings you chose</h5>
+        </br></br>
+        <h5><h5>
 
     <form action="result.php" method="post">
 

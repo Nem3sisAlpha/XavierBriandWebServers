@@ -36,6 +36,7 @@
               <td>{$row['name']}</td>
               <td>{$row['score']}</td>";
               $rank++;
+                </br>
             }
           }
         ?>

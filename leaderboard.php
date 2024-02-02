@@ -35,7 +35,7 @@
               echo "<td>{$rank}</td>
               <td>{'name'}</td>
               <td>{'score'}</td>";
-              $rank++
+              $rank++;
             }
           }
         ?>

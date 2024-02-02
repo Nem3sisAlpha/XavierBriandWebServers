@@ -30,7 +30,7 @@
 
           $rank = 1;
 
-          if (mysqli_num_row($result)) {
+          if (mysqli_num_rows($result)) {
             while ($row = mysqli_fetch_array($result)) {
               echo "<td>{$rank}</td>
               <td>{'name'}</td>

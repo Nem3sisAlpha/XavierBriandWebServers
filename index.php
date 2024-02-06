@@ -17,20 +17,20 @@
             <option value="4">Hard</option>
             <option value="5">Custom</option>
         </select>
-
+            <br><br><br>
             Set the speed interval: <input type="text" id="hide" name="speed" required>
         <select name="manufacturer" id="manufacturer"> 
             <option value="" class="default" selected>(select)</option>
             <option value="Manufacturer One">Manufacturer One</option>
             <option value="Manufacturer Two">Manufacturer Two</option>
         </select>
-
+            <br><br>
         <select name="model" id="model"> 
             <option value="" selected>(select)</option>
             <option value="Model One">Model One</option>
             <option value="Model Two">Model Two</option>
         </select>
-
+            <br><br><br>
             
         <script>
             $(function(){

@@ -8,9 +8,9 @@
       <h2>Simon Says Leaderboard</h2>
       <table>
         <tr>
-          <td>Rank</td>
-          <td>Name</td>
-          <td>Score</td>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
         </tr>
 
         <?php 
@@ -32,9 +32,9 @@
 
           if (mysqli_num_rows($result)) {
             while ($row = mysqli_fetch_assoc($result)) {
-              echo "<td>{$rank}</td>
+              echo "<tr><td>{$rank}</td>
               <td>{$row['name']}</td>
-              <td>{$row['score']}</td>";
+              <td>{$row['score']}</td></tr>";
               $rank++;
             }
           }

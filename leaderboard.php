@@ -32,9 +32,9 @@
 
           if (mysqli_num_rows($result)) {
             while ($row = mysqli_fetch_assoc($result)) {
-              echo "<tr>{$rank}</tr>
-              <tr>{$row['name']}</tr>
-              <tr>{$row['score']}</tr>";
+              echo "<td>{$rank}</td>
+              <td>{$row['name']}</td>
+              <td>{$row['score']}</td>";
               $rank++;
             }
           }

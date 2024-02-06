@@ -8,24 +8,30 @@
         <h4>In here you will either be able to challenge or go easy on yourself as this game can be either really hard, or really easy depending on the settings you chose</h4>
         </br></br>
         <h4>Choose your game difficulty<h4>
-            
+        <br><br>
         <form action="game.php" method="post">
-        <select name="main" id="main">
-            <option value="" class="default" selected>Choose option</option>
-            <option value="2">Easy</option>
-            <option value="3">Medium</option>
-            <option value="4">Hard</option>
-            <option value="5">Custom</option>
-        </select>
+
+            <button>Easy</button>
+
             <br><br><br>
-            Set the speed interval: <input type="text" id="hide" name="speed" required>
+
+            <button>Medium</button>
+            
+            <br><br><br>
+
+            <button>Hard</button>
+
+            <br><br><br>
+
+            <button>Custom</button>
        
         </br></br>
-        <h4>For the Leaderboard, click here!</h4>
-        <a href="leaderboard.php">Next Page</a>  
         
-        <input type="submit" value="submit"/>  
 
         </form>
+            
+        <h4>For the Leaderboard, click here!</h4><br>
+        <a href="leaderboard.php">Next Page</a>  
+            
     </body>
 </html>

@@ -19,20 +19,32 @@
         </select>
 
             Set the speed interval: <input type="text" id="hide" name="speed" required>
+        <select name="manufacturer" id="manufacturer"> 
+            <option value="" class="default" selected>(select)</option>
+            <option value="Manufacturer One">Manufacturer One</option>
+            <option value="Manufacturer Two">Manufacturer Two</option>
+        </select>
+
+        <select name="model" id="model"> 
+            <option value="" selected>(select)</option>
+            <option value="Model One">Model One</option>
+            <option value="Model Two">Model Two</option>
+        </select>
+
             
         <script>
-        $(function(){
-            $("#hide").hide();  // By default use jQuery to hide the second option
+            $(function(){
+                $("#model").hide();  // By default use jQuery to hide the second modal
 
-            // We can use the change(); function to watch the state of the select box and run some conditional logic every time it's changes to hide or show the second select box
-            $("#main").change(function(){
-                if( $(".default").is(:selected) ){
-                    $("#hide").show();
-                } else {
-                    $("#hide").hide();
-                }
+                // We can use the change(); function to watch the state of the select box and run some conditional logic every time it's changes to hide or show the second select box
+                $("#manufacturer").change(function(){
+                    if( $(".default").is(:selected) ){
+                        $("#model").hide();
+                    } else {
+                        $("#model").show();
+                    }
+                });
             });
-        });
         </script>
         </br></br>
         <h4>For the Leaderboard, click here!</h4>

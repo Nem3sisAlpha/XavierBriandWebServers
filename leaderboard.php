@@ -2,29 +2,6 @@
 <html>
     <head>
         <title>Leaderboard</title>
-
-        <style>
-            @media (prefers-color-scheme: light) {
-                body{
-                    background-color: #FFF;
-                }
-                h1{
-                    color: #000;
-                }
-            }
-
-            @media (prefers-color-scheme: dark) {
-                body{
-                    background-color: #000;
-                }
-                h1{
-                    color: #FFF;
-                }
-            }
-
-        </style>
-
-        
     </head>
   
     <body>

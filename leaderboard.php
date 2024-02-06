@@ -6,19 +6,19 @@
         <style>
             @media (prefers-color-scheme: light) {
                 body{
-                    background-color: #white;
+                    background-color: #FFF;
                 }
                 h1{
-                    color: #black;
+                    color: #000;
                 }
             }
 
             @media (prefers-color-scheme: dark) {
                 body{
-                    background-color: #black;
+                    background-color: #000;
                 }
                 h1{
-                    color: #white;
+                    color: #FFF;
                 }
             }
 

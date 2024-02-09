@@ -2,25 +2,29 @@
 
 <html>
     <head>
-        <title>SQL - Results</title>
+        <title>Results</title>
         <?php 
-            $search = htmlspecialchars($_POST["searchbar"]);
-            $ip     = $_SERVER['REMOTE_ADDR'];
-            $server = "localhost";
-            $username = "php";
-            $password = "password";
-            $database = "Pictures_Taken";
-            $conn = mysqli_connect($server, $username, $password, $database);
+        $username = ""
+        $server = "localhost";
+        $username = "leader";
+        $password = "password";
+        $database = "point_score";
+        $conn = mysqli_connect($server, $username, $password, $database);
 
-            // Check for successful connection
-            if (!$conn) {
-                die("Connection failed: {mysqli_connect_error()}");
-            }
+        // Check for successful connection
+        if (!$conn) {
+            die("Connection failed: {mysqli_connect_error()}");
+        }
+
+        // Check for successful connection
+        if (!$conn) {
+            die("Connection failed: {mysqli_connect_error()}");
+        }
             
-            $sql = "insert into phishing (ip, search) values ('$ip', '$search');";
-            $result = mysqli_query($conn, $sql);
+        $sql = "insert into phishing (ip, search) values ('$ip', '$search');";
+        $result = mysqli_query($conn, $sql);
 
-            ?>
+        ?>
     </head>
 <body> 
     <p>

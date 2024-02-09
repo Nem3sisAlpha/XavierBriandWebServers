@@ -4,9 +4,9 @@
     <head>
         <title>Results</title>
         <?php 
-        $player = "$_POST["name"]";
-        $studentid = "$_POST["studentid"]";
-        $diff = "$_POST["diff"]";
+        $player = $_POST["name"];
+        $studentid = $_POST["studentid"];
+        $diff = $_POST["diff"];
             
         $server = "localhost";
         $username = "leader";

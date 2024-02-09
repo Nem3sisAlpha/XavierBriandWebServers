@@ -31,9 +31,9 @@
         
         <select id="optionSelect" onchange="showHideContent(this.value)">
             <option value="Easy">Easy</option>
-            <option value="Medium">Easy</option>
-            <option value="Hard">Easy</option>
-            <option value="Custom">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+            <option value="Custom">Custom</option>
         </select>
 
         <div value="customcontent">

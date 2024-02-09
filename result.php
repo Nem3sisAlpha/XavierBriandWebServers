@@ -4,7 +4,10 @@
     <head>
         <title>Results</title>
         <?php 
-        $username = ""
+        $player = "$_POST["name"]";
+        $studentid = "$_POST["studentid"]";
+        $diff = "$_POST["diff"]";
+            
         $server = "localhost";
         $username = "leader";
         $password = "password";
@@ -16,22 +19,12 @@
             die("Connection failed: {mysqli_connect_error()}");
         }
 
-        // Check for successful connection
-        if (!$conn) {
-            die("Connection failed: {mysqli_connect_error()}");
-        }
-            
-        $sql = "insert into phishing (ip, search) values ('$ip', '$search');";
-        $result = mysqli_query($conn, $sql);
-
         ?>
     </head>
-<body> 
-    <p>
-
-    <?php header('Location: https://www.google.com/search?q='.$search); ?>
-
-    <?php mysqli_error($conn)?></p>
-    
+<body>       
+    <h3>Welcome <?php echo $player; ?></h3><br>
+    <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
+    <h4>You set your difficulty to <?php echo $diff; ?></h4><br>
+        
 </body>
 </html>

@@ -28,12 +28,12 @@
 
         <script>
             function visibility() {
-                var x = document.getElementById("customContent");
+                var x = document.getElementById("optionSelect");
                 if (x.style.display === "Custom") {
-                    x.style.display = "block";
+                    customContent.style.display = "block";
                 }
                 else {
-                    x.style.display = "none";
+                    customContent.style.display = "none";
                 }
             }
         </script>

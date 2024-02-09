@@ -20,7 +20,7 @@
             <option value="Custom">Custom</option>
         </select>
 
-        <div value="customContent">
+        <div id="customContent">
             <h4>Content for Custom Option</h4>
         </div>
     

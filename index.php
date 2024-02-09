@@ -12,10 +12,10 @@
             <h4>You may enter your name here</h4><input type="text" id="name" name="name" required> </br></br>
             <h4>You also may enter your email address here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
 
-        <input type="submit" value="Easy"><br><br>
-        <input type="submit" value="Medium"><br><br>
-        <input type="submit" value="Hard"><br><br>
-        <input type="submit" value="Custom"><br><br>
+        <input type="submit" id="Easy" value="Easy"><br><br>
+        <input type="submit" id="Medium" value="Medium"><br><br>
+        <input type="submit" id="Hard" value="Hard"><br><br>
+        <input type="submit" id="Custom" value="Custom"><br><br>
             
         </form>
 

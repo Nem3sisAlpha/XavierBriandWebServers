@@ -28,7 +28,7 @@
 
         <script>
             function visibility() {
-                var x = document.getElementById("Custom");
+                var x = document.getElementById("customContent");
                 if (x.style.display === "Custom") {
                     x.style.display = "block";
                 }

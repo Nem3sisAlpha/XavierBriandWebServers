@@ -24,11 +24,11 @@
             <h4>Content for Custom Option</h4>
 
         </div>
-    s
+    
         </form>
 
         <script>
-            //@param {string} 
+            @param {string} option
             function showHideContent(option) {
                 //get content
                 const contentElement = document.getElementById("customContent");

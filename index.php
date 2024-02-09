@@ -13,7 +13,7 @@
             <h4>You also may enter your email address here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
         </form>
         
-        <select id="optionSelect" onchange="showHideContent">
+        <select id="optionSelect" onchange="visibility()">
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
@@ -27,15 +27,14 @@
         </form>
 
         <script>
-            function showHideContent(element) {
-                //get content
-                const contentElement = document.getElementById("customContent");
-
-                //check option
-                if (element.value === "Custom")
-                    contentElement.style.display = "block";
-                else 
-                    contentElement.style.display = "none";
+            function visibility() {
+                var x = document.getElementById("Custom");
+                if (x.style.display === "Custom") {
+                    x.style.display = "block";
+                }
+                else {
+                    x.style.display = "none";
+                }
             }
         </script>
 

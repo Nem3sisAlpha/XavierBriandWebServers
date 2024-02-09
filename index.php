@@ -13,7 +13,7 @@
             <h4>You also may enter your email address here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
         </form>
         
-        <select id="optionSelect" onchange="showHideContent(this.value)">
+        <select id="optionSelect" onchange="showHideContent">
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
@@ -22,19 +22,17 @@
 
         <div value="customContent">
             <h4>Content for Custom Option</h4>
-
         </div>
     
         </form>
 
         <script>
-            @param {string} option
-            function showHideContent(option) {
+            function showHideContent(element) {
                 //get content
                 const contentElement = document.getElementById("customContent");
 
                 //check option
-                if (option === "Custom")
+                if (element.value === "Custom")
                     contentElement.style.display = "block";
                 else 
                     contentElement.style.display = "none";

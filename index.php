@@ -20,28 +20,29 @@
             <option value="Custom">Custom</option>
         </select>
 
+        <div value="customContent">
+            <h4>Content for Custom Option</h4>
+
+        </div>
+    s
+        </form>
+
         <script>
+            //@param {string} 
             function showHideContent(option) {
                 //get content
-                const contentElement = document.getElementById("customcontent");
+                const contentElement = document.getElementById("customContent");
 
                 //check option
-                if (option == "Custom")
+                if (option === "Custom")
                     contentElement.style.display = "block";
                 else 
                     contentElement.style.display = "none";
             }
         </script>
 
-        
-        <div value="customcontent">
-            <h4>Content for Custom Option</h4>
-
-        </div>
 
         
-        </form>
-            
         <h4>For the Leaderboard, click here!</h4><br>
         <a href="leaderboard.php">Next Page</a>  
             

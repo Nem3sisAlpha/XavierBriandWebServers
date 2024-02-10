@@ -17,14 +17,16 @@
                 die("Connection failed: {mysqli_connect_error()}");
             }
             
-            $sql = "UPDATE Pictures SET 2023pics = {$chg} where pictures_id={$rownum};";
+            $sql = "UPDATE Pictures SET 2023pics = {$chg} where picture_id={$rownum};";
             $result = mysqli_query($conn, $sql);
-            $sql = "SELECT * from Pictures WHERE pictures_id={$rownum};";
+
+            
+            $sql = "select * from Pictures where picture_id={$rownum};";
+>>>>>>> 3fa7b65ca75cdf51c8d8a055583e2a5326ef6784:WebServers/bme280/tablechg.php
             $result = mysqli_query($conn, $sql);
         ?>
     </head>
 <body>
-    <p><?php mysqli_error($conn)?></p>
     
     <?php
     foreach($result as $row)

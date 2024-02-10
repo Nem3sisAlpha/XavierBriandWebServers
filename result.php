@@ -18,6 +18,10 @@
         if (!$conn) {
             die("Connection failed: {mysqli_connect_error()}");
         }
+        function refresh_page($seconds = 0) {
+            // Set the refresh header
+            header("refresh:{$seconds}");
+        } 
 
         ?>
     </head>
@@ -25,6 +29,13 @@
     <h3>Welcome <?php echo $player; ?></h3><br>
     <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
     <h4>You set your difficulty to <?php echo $diff; ?></h4><br>
+    <h4></h4>
         
+    
+    <?php
+    // Call the refresh_page() function with 5 seconds as the parameter
+    refresh_page(5);
+    ?>
+
 </body>
 </html>

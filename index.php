@@ -4,44 +4,19 @@
         <title>Simon Says</title>
     </head>
     <body>
-        <h1>HALT</h1>
-        <img src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%201/VAX05085.jpg?raw=true" width="800" height="1200"/>
-        <h2>You must be judged by the judging bird before entering this website</h2>
+        <h1>Welcome to the new revamped version of the Simon Says game!</h1>
+        <h4>In here you will either be able to challenge or go easy on yourself as this game can be either really hard, or really easy depending on the settings you chose</h4>
+        </br></br>
+        
+        <form action="result.php" method="post">
+            <h4>You may enter your name here</h4><input type="text" id="name" name="name" required> </br></br>
+            <h4>You also may enter your email address here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
 
-        <h3>Recorded amount of pictures taken monthly per year</h3>
-        <form action="result.php" method="get">
-        <label for="pictures">Select Month to see the amount of pictures taken per year:</label><br/>
-        <select id="pictureinfo" name="pictureinfo">
-            <?php
-                foreach($result as $row) 
-                {
-                    echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']}</option>\n";
-                }
-                mysqli_close($conn);
-            ?>
-        </select>
-            </br></br>
-        <input type="submit" value="submit"/>  
-    </form>
-
-    </br></br>
-
-
-        <form action="tablechg.php" method="get">
-            <label for="pictures1">Select Month to see the amount of pictures taken for the year 2023</label><br/>
-            <select id="picturechg" name="picturechg">
-                <?php
-                    foreach($result as $row) 
-                    {
-                        echo "<option value='{$row['pictures_id']}'> Month: {$row['pictures_id']} || Year: 2023 </option>\n";
-
-                    }
-                    mysqli_close($conn);
-                ?>
-            </select></br></br>
-            <label for="pics">Enter the new number of pictures for the month and year</label><br/>
-            <input type="number" required id="2023pics" name="2023pics" /><br/><br/>
-            <input type="submit" value="submit"/>  
+        <input type="submit" id="diff" name="diff" value="Easy"><br><br>
+        <input type="submit" id="diff" name="diff" value="Medium"><br><br>
+        <input type="submit" id="diff" name="diff" value="Hard"><br><br>
+        <input type="submit" id="diff" name="diff" value="Custom"><br><br>
+            
         </form>
 
         

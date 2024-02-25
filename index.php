@@ -21,7 +21,7 @@
 
         
         <h4>For the Leaderboard, click here!</h4><br>
-        <a href="leaderboard.php">Next Page</a>  
+        <a href="leaderboard.php">Leaderboard</a>  
             
     </body>
 </html>

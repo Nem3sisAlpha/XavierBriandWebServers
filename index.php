@@ -10,7 +10,7 @@
         
         <form action="result.php" method="post">
             <h4>You may enter your name here</h4><input type="text" id="name" name="name" required> </br></br>
-            <h4>You also may enter your email address here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
+            <h4>You also may enter your Student ID here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
 
         <input type="submit" id="diff" name="diff" value="Easy"><br><br>
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>

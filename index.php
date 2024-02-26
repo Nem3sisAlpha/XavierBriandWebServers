@@ -18,14 +18,14 @@
         <input type="submit" id="diff" name="diff" value="Easy"><br><br>
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
-        <button onclick="myFunction()">Custom</button><br><br>
-        <div id="myDIV">
-            <input type="submit" id="diff" name="diff" value="Custom"><br><br>
+        
         </div>
 
         </form>
 
-        
+        <button onclick="myFunction()">Custom</button><br><br>
+        <div id="myDIV">
+            <input type="submit" id="diff" name="diff" value="Custom"><br><br>
 
         <br><br>
 
@@ -37,10 +37,10 @@
         <script>
             function myFunction() {
             var x = document.getElementById("myDIV");
-            if (x.style.display === "none") {
-            x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
             x.style.display = "none";
+            } else {
+            x.style.display = "block";
             }
             }
         </script>

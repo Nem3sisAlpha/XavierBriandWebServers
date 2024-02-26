@@ -23,7 +23,17 @@
 
         <button onclick="visibility()">Custom</button>
 
-
+        <script>
+            function visibility() {
+                var x = document.getElementById("AngryPingu");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                }
+                else {
+                    x.style.display = "none";
+                }
+            }
+        <script>
 
         <img id="AngryPingu" src="https://i.pinimg.com/originals/9a/4f/49/9a4f491d1d40bab54b44f20778663ad0.png" width="671" height="417"/>
 
@@ -38,17 +48,7 @@
         <h4>For the Leaderboard, click here!</h4><br>
         <a href="leaderboard.php">Leaderboard</a>  
         
-        <script>
-            function visibility() {
-                var x = document.getElementById("AngryPingu");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
-                else {
-                    x.style.display = "none";
-                }
-            }
-        <script>
+        
 
     </body>
 </html>

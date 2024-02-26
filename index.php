@@ -35,12 +35,10 @@
             }
         <script>
 
-        <div id="AngryPingu">
-            <form>
+        <form id="AngryPingu">
 
-            <input type="submit" id="diff" name="diff" value="Custom"><br><br>
-            </form>
-        </div>
+        <input type="submit" id="diff" name="diff" value="Custom"><br><br>
+        </form>
 
       
         

@@ -21,22 +21,28 @@
         
         </form>
 
-        
-        <div id="AngryPingu">
+        <button onclick="myFunction()">Custom</button>
+        <div id="myDIV">
             <input type="submit" id="diff" name="diff" value="Custom"><br><br>
         </div>
 
         <br><br>
 
-
      
-      
-        
 
         <h4>For the Leaderboard, click here!</h4><br>
         <a href="leaderboard.php">Leaderboard</a>  
         
-        
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+            }
+        </script>
 
     </body>
 </html>

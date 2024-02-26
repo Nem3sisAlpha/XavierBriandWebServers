@@ -19,14 +19,30 @@
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
         
-        <button onclick="visibility()">Custom</button>
-           
-
-        
-
-
         </form>
 
+        <button onclick="visibility()">Custom</button>
+
+        <script>
+            function visibility() {
+                    var x = document.getElementById("custom_data");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+        <script>
+
+        <div id="custom_data">
+            <form>
+
+            <input type="submit" id="diff" name="diff" value="Custom"><br><br>
+            </form>
+        </div>
+
+      
         
 
         <h4>For the Leaderboard, click here!</h4><br>

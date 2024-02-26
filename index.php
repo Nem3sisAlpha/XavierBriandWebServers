@@ -28,9 +28,16 @@
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
         
         </form>
-        </div>
 
-        <button onclick="myFunction()">Custom</button><br><br>
+
+
+        
+        </div>
+        
+        <button onclick="myFunction()" class="text-zinc-700 hover:text-green-600 backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,121,121,0.16)] to-transparent rounded-md py-2 px-6 shadow hover:shadow-green-600 duration-700">
+            Custom
+        </button>
+        <br><br>
 
         <div id="custom">
         <form action="custom_result.php" method="post">

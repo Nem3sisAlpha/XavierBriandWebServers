@@ -4,6 +4,19 @@
         <title>Simon Says</title>
     </head>
     <body>
+        <script>
+            function visibility() {
+                    var x = document.getElementById("custom_data");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+        <script>
+
+
         <h1>Welcome to the new revamped version of the Simon Says game!</h1>
         <h4>In here you will either be able to challenge or go easy on yourself as this game can be either really hard, or really easy depending on the settings you chose</h4>
         </br>
@@ -15,20 +28,17 @@
         <input type="submit" id="diff" name="diff" value="Easy"><br><br>
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
-        <input type="submit" id="diff" name="diff" value="Custom"><br><br>
-            
+        <button onclick="visibility()">Custom</button>
+           
+        <div id="custom_data">
+
+            <input type="submit" id="diff" name="diff" value="Custom"><br><br>
+        </div>
+
+
         </form>
-        <script>
-            function visibility() {
-                    var x = document.getElementById("AngryPingu");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    }
-                    else {
-                        x.style.display = "none";
-                    }
-                }
-        <script>
+
+        
 
         <h4>For the Leaderboard, click here!</h4><br>
         <a href="leaderboard.php">Leaderboard</a>  

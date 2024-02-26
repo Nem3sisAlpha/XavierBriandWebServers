@@ -24,14 +24,21 @@
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
         
-        </div>
-        
         </form>
+        </div>
 
         <button onclick="myFunction()">Custom</button><br><br>
 
         <div id="custom">
+        <form action="result.php" method="post">
+
+            <h3>It appears you want your game to have customized settings!</h3>
+
+            <h4>You may enter your name here</h4><input type="text" id="name" name="name" required> </br></br>
+            <h4>You also may enter your Student ID here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
             <input type="submit" id="diff" name="diff" value="Custom"><br><br>
+
+        </form>
         </div>
 
         <h4>For the Leaderboard, click here!</h4><br>

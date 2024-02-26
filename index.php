@@ -19,6 +19,9 @@
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
         
+        <button onclick="visibility()">Custom</button>
+           
+
         <script>
             function visibility() {
                     var x = document.getElementById("custom_data");
@@ -30,9 +33,6 @@
                     }
                 }
         <script>
-
-        <button onclick="visibility()">Custom</button>
-           
 
         <div id="custom_data">
 

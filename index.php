@@ -18,19 +18,17 @@
         <input type="submit" id="diff" name="diff" value="Custom"><br><br>
             
         </form>
-
-        <?php
-        
-        function visibility() {
-                var x = document.getElementById("AngryPingu");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
+        <script>
+            function visibility() {
+                    var x = document.getElementById("AngryPingu");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
                 }
-                else {
-                    x.style.display = "none";
-                }
-            }
-        ?>
+        <script>
 
         <h4>For the Leaderboard, click here!</h4><br>
         <a href="leaderboard.php">Leaderboard</a>  

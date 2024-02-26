@@ -36,12 +36,6 @@
     <h4>You are given <?php echo $timegiven; ?> second(s) to recreate the pattern</h4><br>
     <h4>You will have a squence of <?php echo $maxpatt; ?> patterns</h4><br>
     <h4></h4>
-        
-    
-    <?php
-    // Call the refresh_page() function with 5 seconds as the parameter
-    refresh_page(5);
-    ?>
 
 </body>
 </html>

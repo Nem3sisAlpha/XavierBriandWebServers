@@ -30,12 +30,6 @@
     <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
     <h4>You set your difficulty to <?php echo $diff; ?></h4><br>
     <h4></h4>
-        
-    
-    <?php
-    // Call the refresh_page() function with 5 seconds as the parameter
-    refresh_page(5);
-    ?>
 
 </body>
 </html>

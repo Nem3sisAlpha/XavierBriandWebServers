@@ -33,12 +33,18 @@
         <button onclick="myFunction()">Custom</button><br><br>
 
         <div id="custom">
-        <form action="result.php" method="post">
+        <form action="custom_result.php" method="post">
 
             <h3>It appears you want your game to have customized settings!</h3>
 
             <h4>You may enter your name here</h4><input type="text" id="name" name="name" required> </br></br>
-            <h4>You also may enter your Student ID here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
+            <h4>You also may enter your Student ID here</h4><input type="text" id="studentid" name="studentid" required> </br></br>
+
+
+            <h4>Enter the time interval between each pattern</h4><input type="text" id="timeint" name="timeint" required> </br></br>
+            <h4>Enter the time given to you to recreate the pattern</h4><input type="text" id="timegiven" name="timegiven" required> </br></br>
+            <h4>Enter the maximum number of pattern you want</h4><input type="text" id="maxpatt" name="maxpatt" required> </br></br>
+
             <input type="submit" id="diff" name="diff" value="Custom"><br><br>
 
         </form>

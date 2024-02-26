@@ -25,17 +25,17 @@
 
         <script>
             function visibility() {
-                    var x = document.getElementById("custom_data");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    }
-                    else {
-                        x.style.display = "none";
-                    }
+                var x = document.getElementById("AngryPingu");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
                 }
+                else {
+                    x.style.display = "none";
+                }
+            }
         <script>
 
-        <div id="custom_data">
+        <div id="AngryPingu">
             <form>
 
             <input type="submit" id="diff" name="diff" value="Custom"><br><br>

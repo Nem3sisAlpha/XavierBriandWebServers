@@ -119,7 +119,9 @@
 
         <button onclick="visibility()">YEET IN OR OUT?</button>
         </br></br>
-        <img id="AngryPingu" src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/Images%20Lab%204/Angry%20Pingu.jpg?raw=true" width="671" height="417"/>
+        <div>
+            <button>custom</button>
+        </div>
 
         </br></br></br></br>
 

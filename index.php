@@ -19,6 +19,7 @@
             
         </form>
 
+        <?php
         
         function visibility() {
                 var x = document.getElementById("AngryPingu");
@@ -29,7 +30,8 @@
                     x.style.display = "none";
                 }
             }
-        
+        ?>
+
         <h4>For the Leaderboard, click here!</h4><br>
         <a href="leaderboard.php">Leaderboard</a>  
             

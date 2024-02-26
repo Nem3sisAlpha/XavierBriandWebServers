@@ -4,17 +4,7 @@
         <title>Simon Says</title>
     </head>
     <body>
-        <script>
-            function visibility() {
-                    var x = document.getElementById("custom_data");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    }
-                    else {
-                        x.style.display = "none";
-                    }
-                }
-        <script>
+        
 
 
         <h1>Welcome to the new revamped version of the Simon Says game!</h1>
@@ -28,8 +18,22 @@
         <input type="submit" id="diff" name="diff" value="Easy"><br><br>
         <input type="submit" id="diff" name="diff" value="Medium"><br><br>
         <input type="submit" id="diff" name="diff" value="Hard"><br><br>
+        
+        <script>
+            function visibility() {
+                    var x = document.getElementById("custom_data");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+        <script>
+
         <button onclick="visibility()">Custom</button>
            
+
         <div id="custom_data">
 
             <input type="submit" id="diff" name="diff" value="Custom"><br><br>

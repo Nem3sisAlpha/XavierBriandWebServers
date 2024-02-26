@@ -44,14 +44,10 @@
 
                 if (x.style.display === "block") {
                 x.style.display = "none";
+                y.style.display = "block";
                 } else {
                 x.style.display = "block";
-                }
-
-                if (y.style.display === "none") {
-                x.style.display = "block";
-                } else {
-                x.style.display = "none";
+                y.style.display = "none";
                 }
             }
         </script>

@@ -25,7 +25,7 @@
 
 
 
-        <img id="AngryPingu" src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/WebServers/bme280/Images%20Lab%204/Angry%20Pingu.jpg" width="671" height="417"/>
+        <img id="AngryPingu" src="https://i.pinimg.com/originals/9a/4f/49/9a4f491d1d40bab54b44f20778663ad0.png" width="671" height="417"/>
 
         <form>
 

@@ -2,39 +2,33 @@
 
 <html>
     <head>
-        <title>Results</title>
+        <title>SQL - Results</title>
         <?php 
-        $player = $_POST["name"];
-        $studentid = $_POST["studentid"];
-        $diff = $_POST["diff"];
+            $rownum = (int)($_GET["pictureinfo"]);
+            $server = "localhost";
+            $username = "php";
+            $password = "password";
+            $database = "Pictures_Taken";
+            $conn = mysqli_connect($server, $username, $password, $database);
+
+            // Check for successful connection
+            if (!$conn) {
+                die("Connection failed: {mysqli_connect_error()}");
+            }
             
-        $server = "localhost";
-        $username = "leader";
-        $password = "password";
-        $database = "point_score";
-        $conn = mysqli_connect($server, $username, $password, $database);
-
-        // Check for successful connection
-        if (!$conn) {
-            die("Connection failed: {mysqli_connect_error()}");
-        }
-        function refresh_page($seconds = 0) {
-            // Set the refresh header
-            header("refresh:{$seconds}");
-        } 
-
+            $sql = "select * from Pictures where picture_id='{$rownum}';";
+            $result = mysqli_query($conn, $sql);
         ?>
     </head>
-<body>       
-    <h3>Welcome <?php echo $player; ?></h3><br>
-    <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
-    <h4>You set your difficulty to <?php echo $diff; ?></h4><br>
-    <h4></h4>
-        
-    
+<body>
+    You selected Month <?php echo $rownum ?></br>
+    <p><?php mysqli_error($conn)?></p>
     <?php
-    // Call the refresh_page() function with 5 seconds as the parameter
-    refresh_page(5);
+    foreach($result as $row)
+            {
+                echo "This month has: {$row['2019pics']} pictures in 2019, {$row['2020pics']} pictures in 2020, {$row['2021pics']} pictures in 2021, {$row['2022pics']} pictures in 2022, and {$row['2023pics']} pictures in 2023";
+            }
+            mysqli_close($conn);
     ?>
 
 </body>

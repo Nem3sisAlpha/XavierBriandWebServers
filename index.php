@@ -31,7 +31,7 @@
 
         <input type="submit" id="diff" name="diff" value="Custom"><br><br>
         </form>
-        </div>
+     
       
         
 

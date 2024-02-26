@@ -23,8 +23,10 @@
 
         <button onclick="visibility()">Custom</button>
 
-        
-        <div id="AngryPingu">
+
+
+        <img id="AngryPingu" src="https://github.com/Nem3sisAlpha/XavierBriandWebServers/blob/main/WebServers/bme280/Images%20Lab%204/Angry%20Pingu.jpg" width="671" height="417"/>
+
         <form>
 
         <input type="submit" id="diff" name="diff" value="Custom"><br><br>

@@ -24,12 +24,12 @@
         <button onclick="visibility()">Custom</button>
 
         
-
-        <form id="AngryPingu">
+        <div id="AngryPingu">
+        <form>
 
         <input type="submit" id="diff" name="diff" value="Custom"><br><br>
         </form>
-
+        </div>
       
         
 
@@ -47,6 +47,6 @@
                 }
             }
         <script>
-        
+
     </body>
 </html>

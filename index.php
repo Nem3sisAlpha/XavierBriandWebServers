@@ -7,7 +7,7 @@
         
         <script>
             var x = document.getElementById("myDIV");
-            x.style.display === "none";
+            x.style.display = "none";
         </script>
 
         <h1>Welcome to the new revamped version of the Simon Says game!</h1>

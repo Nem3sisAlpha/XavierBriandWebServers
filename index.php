@@ -22,22 +22,7 @@
         <button onclick="visibility()">Custom</button>
            
 
-        <script>
-            function visibility() {
-                    var x = document.getElementById("custom_data");
-                    if (x.style.display === "none") {
-                        x.style.display = "block";
-                    }
-                    else {
-                        x.style.display = "none";
-                    }
-                }
-        <script>
-
-        <div id="custom_data">
-
-            <input type="submit" id="diff" name="diff" value="Custom"><br><br>
-        </div>
+        
 
 
         </form>

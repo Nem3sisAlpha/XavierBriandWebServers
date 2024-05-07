@@ -39,7 +39,9 @@
     while (1)
     {
         $step = exec("python3 /home/xavier/python/ser.rd.py");
-    
+        
+        sleep(1);
+
         if ($step == "D")
         {
             //serial writing a ASCII character corresponding to the difficulty setting
@@ -73,7 +75,7 @@
                 $set = "C";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");
-    
+                sleep(1);
                 //Serial writing the time interval again from a calculation
     
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $time_int");
@@ -128,7 +130,9 @@
             $max_score = 10000;
     
             $mistakes = exec("python3 /home/xavier/python/ser.rdbytes.py");
-    
+            
+            sleep(1);
+
             $success = $max_patt - $mistakes;
     
             if ($success <= $max_patt)

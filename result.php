@@ -39,7 +39,7 @@ sleep(1);
 
 while (1)
 {
-    $step = exec("python /home/xavier/python/ser.rd.py");
+    $step = exec("python3 /home/xavier/python/ser.rd.py");
 
     if ($step == "D")
     {

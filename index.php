@@ -23,9 +23,9 @@
             <h4>You may enter first your name here</h4><input type="text" id="name" name="name" required> </br></br>
             <h4>You also may enter your Student ID here</h4> <input type="text" id="studentid" name="studentid" required> </br></br>
 
-        <input type="submit" id="diff" name="diff" value="Easy"><br><br>
-        <input type="submit" id="diff" name="diff" value="Medium"><br><br>
-        <input type="submit" id="diff" name="diff" value="Hard"><br><br>
+        <input type="submit" id="diff" name="diff" value="Easy"><br><br><br><br>
+        <input type="submit" id="diff" name="diff" value="Medium"><br><br><br><br>
+        <input type="submit" id="diff" name="diff" value="Hard"><br><br><br><br>
         
         </form>
         

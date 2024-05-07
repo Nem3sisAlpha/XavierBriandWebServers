@@ -32,8 +32,8 @@
 <?php
     $step = "0";
     $diff = $_POST["diff"];
-    $max_patt = "0";
-      
+    $max_patt = in(0);
+
 
     $start = "S";
     $stop= chr(0x03);
@@ -53,7 +53,7 @@
 
             if ($diff == "Easy")
             {
-                $max_patt = 5;
+                $max_patt = int(5);
                 $set = "E";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");
@@ -61,7 +61,7 @@
     
             elseif ($diff == "Medium")
             {
-                $max_patt = 10;
+                $max_patt = int(10);
                 $set = "M";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");
@@ -69,7 +69,7 @@
     
             elseif ($diff == "Hard")
             {
-                $max_patt = 15;
+                $max_patt = int(15);
                 $set = "H";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");

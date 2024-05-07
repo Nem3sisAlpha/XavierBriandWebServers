@@ -140,6 +140,8 @@
                     $user_score = intval(($success / $max_patt) * $max_score);
     
                     echo "$user_score";
+
+                    header("Location: xavierpi.local:8080/leaderboard.php");
     
                     break;
             }
@@ -150,6 +152,9 @@
             }
         }
     }
+
+    header("Location: xavierpi.local:8080/leaderboard.php");
+
 ?>
 
 </html>

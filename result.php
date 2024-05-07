@@ -34,11 +34,11 @@
 $start = "S";
 $stop= chr(0x03);
 
-exec(" python3 /home/xavier/python/serialwrite_ascii.py $start");
+exec("python3 /home/xavier/python/serialwrite_ascii.py $start");
 
 while (1)
 {
-    $step = exec(" python3 /home/xavier/python/ser.rd.py");
+    $step = exec("python3 /home/xavier/python/ser.rd.py");
 
     if ($step == "D")
     {

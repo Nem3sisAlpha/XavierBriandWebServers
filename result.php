@@ -49,26 +49,26 @@
 
             if ($diff == "Easy")
             {
+                $max_patt = 5;
                 $set = "E";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");
-                $max_patt = 5;
             }
     
             elseif ($diff == "Medium")
             {
+                $max_patt = 10;
                 $set = "M";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");
-                $max_patt = 10;
             }
     
             elseif ($diff == "Hard")
             {
+                $max_patt = 15;
                 $set = "H";
                 echo $set;
                 exec("python3 /home/xavier/python/serialwrite_ascii.py $set");
-                $max_patt = 15;
             }
     
             elseif ($diff == "Custom")

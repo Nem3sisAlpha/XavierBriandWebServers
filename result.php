@@ -34,11 +34,11 @@
 $start = "S";
 $stop= chr(0x03);
 
-exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $start");
+exec(" python3 /home/xavier/python/serialwrite_ascii.py $start");
 
 while (1)
 {
-    $step = exec("sudo python3 /home/xavier/python/ser.rd.py");
+    $step = exec(" python3 /home/xavier/python/ser.rd.py");
 
     if ($step == "D")
     {
@@ -48,7 +48,7 @@ while (1)
         {
             $set = "E";
             echo $set;
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $set");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $set");
             $max_patt = 5;
         }
 
@@ -56,7 +56,7 @@ while (1)
         {
             $set = "M";
             echo $set;
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $set");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $set");
             $max_patt = 10;
         }
 
@@ -64,7 +64,7 @@ while (1)
         {
             $set = "H";
             echo $set;
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $set");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $set");
             $max_patt = 15;
         }
 
@@ -72,28 +72,28 @@ while (1)
         {
             $set = "C";
             echo $set;
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $set");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $set");
 
             //Serial writing the time interval again from a calculation
 
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $time_int");
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $stop");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $time_int");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $stop");
             sleep(1);
-            exec("sudo python3 /home/xavier/python/serialwrite_dec.py $time_int");
+            exec(" python3 /home/xavier/python/serialwrite_dec.py $time_int");
     
             //serial writing the given time register from a calculation
 
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $time_given");
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $stop");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $time_given");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $stop");
             sleep(1);
-            exec("sudo python3 /home/xavier/python/serialwrite_dec.py $time_given");
+            exec(" python3 /home/xavier/python/serialwrite_dec.py $time_given");
 
             //Serial writing the Max Pattern Value from the Web Configuration
 
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $max_patt");
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $stop");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $max_patt");
+            exec(" python3 /home/xavier/python/serialwrite_ascii.py $stop");
             sleep(1);
-            exec("sudo python3 /home/xavier/python/serialwrite_dec.py $max_patt");
+            exec(" python3 /home/xavier/python/serialwrite_dec.py $max_patt");
 
         }
 
@@ -109,11 +109,11 @@ while (1)
 
             for ($x = 0; $x < $max_patt; $x++)
             {
-                $rand = exec("sudo python3 /home/xavier/python/rand.py");
+                $rand = exec("python3 /home/xavier/python/rand.py");
                 echo $rand;
-                exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $rand");
+                exec("python3 /home/xavier/python/serialwrite_ascii.py $rand");
             }
-            exec("sudo python3 /home/xavier/python/serialwrite_ascii.py $stop");
+            exec("python3 /home/xavier/python/serialwrite_ascii.py $stop");
 
     }
 
@@ -127,7 +127,7 @@ while (1)
 
         $max_score = 10000;
 
-        $mistakes = exec("sudo python3 /home/xavier/python/ser.rdbytes.py");
+        $mistakes = exec("python3 /home/xavier/python/ser.rdbytes.py");
 
         $success = $max_patt - $mistakes;
 

@@ -45,7 +45,8 @@
         if ($step == "D")
         {
             //serial writing a ASCII character corresponding to the difficulty setting
-    
+            sleep(1);
+
             if ($diff == "Easy")
             {
                 $set = "E";
@@ -108,14 +109,15 @@
             //Serial writing the random sequence of numbers
     
             //$max_patt = value set by user on web server
+            sleep(1);
     
-                for ($x = 0; $x < $max_patt; $x++)
-                {
-                    $rand = exec("python3 /home/xavier/python/rand.py");
-                    echo $rand;
-                    exec("python3 /home/xavier/python/serialwrite_ascii.py $rand");
-                }
-                exec("python3 /home/xavier/python/serialwrite_ascii.py $stop");
+            for ($x = 0; $x < $max_patt; $x++)
+            {
+                $rand = exec("python3 /home/xavier/python/rand.py");
+                echo $rand;
+                exec("python3 /home/xavier/python/serialwrite_ascii.py $rand");
+            }
+            exec("python3 /home/xavier/python/serialwrite_ascii.py $stop");
     
         }
     
@@ -151,6 +153,8 @@
                     echo "ERROR: The number of successful sequences cannot be higher than the max pattern\n";
             }
         }
+
+        $step = "0";
     }
 
     header("Location: xavierpi.local:8080/leaderboard.php");

@@ -35,6 +35,7 @@ $start = "S";
 $stop= chr(0x03);
 
 exec("python3 /home/xavier/python/serialwrite_ascii.py $start");
+sleep(1);
 
 while (1)
 {

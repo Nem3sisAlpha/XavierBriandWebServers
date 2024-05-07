@@ -6,7 +6,7 @@
         <?php 
         $player = $_POST["name"];
         $studentid = $_POST["studentid"];
-        $diff = $_POST["diff"];
+
             
         $server = "localhost";
         $username = "leader";
@@ -30,6 +30,10 @@
 </body>
 
 <?php
+    $step = "0";
+    $diff = $_POST["diff"];
+    $max_patt = "0";
+      
 
     $start = "S";
     $stop= chr(0x03);

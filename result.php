@@ -32,7 +32,7 @@
 <?php
     $step = "0";
     $diff = $_POST["diff"];
-    $max_patt = in(0);
+    $max_patt = int(0);
 
 
     $start = "S";

@@ -26,17 +26,13 @@
     <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
     <h4>You set your difficulty to <?php echo $diff; ?></h4><br>
     <h4></h4>
-</body>
 
-        
+</body>
 
 <?php
 
-        exec("python3 /home/xavier/php/settings.php");
+    exec("python3 /home/xavier/php/settings.php");
 
 ?>
-
-
-
 
 </html>

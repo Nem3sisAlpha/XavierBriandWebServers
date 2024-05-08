@@ -54,8 +54,8 @@
         </form>
         </div>
 
-        <h4>For the Leaderboard, click here!</h4><br>
-        <a href="leaderboard.php">Leaderboard</a>  
+        <h4>For the Leaderboard...</h4><br>
+        <a href="leaderboard.php">Click here!</a>  
         
         <script>
             function myFunction() {

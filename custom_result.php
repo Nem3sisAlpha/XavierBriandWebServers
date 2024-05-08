@@ -33,7 +33,7 @@
     <h4>You will have a squence of <?php echo $maxpatt; ?> patterns</h4><br><br>
     
     
-    <h4>Your final score is:<?php echo $final_score; ?></h4>
+    
 
 <?php
 
@@ -41,7 +41,7 @@
     
 ?>
     
-
+    <h4>Your final score is:<?php echo $final_score; ?></h4>
     
 
 </body>

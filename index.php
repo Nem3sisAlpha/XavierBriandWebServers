@@ -45,8 +45,8 @@
             <h4>You also may enter your Student ID here</h4><input type="text" id="studentid" name="studentid" required> </br></br>
 
 
-            <h4>Enter the time interval between each pattern</h4><input type="text" id="timeint" name="timeint" required> </br></br>
-            <h4>Enter the time given to you to recreate the pattern</h4><input type="text" id="timegiven" name="timegiven" required> </br></br>
+            <h4>Enter the time interval between each pattern (/your value\ x 50 ms)</h4><input type="text" id="timeint" name="timeint" required> </br></br>
+            <h4>Enter the time given to you to recreate the pattern (/your value\ x 100 ms)</h4><input type="text" id="timegiven" name="timegiven" required> </br></br>
             <h4>Enter the maximum number of pattern you want</h4><input type="text" id="maxpatt" name="maxpatt" required> </br></br>
 
             <input type="submit" id="diff" name="diff" value="Custom"><br><br>

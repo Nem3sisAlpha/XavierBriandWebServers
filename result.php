@@ -20,18 +20,15 @@
             die("Connection failed: {mysqli_connect_error()}");
         } 
 
+        $final_score = shell_exec("php /home/xavier/php/settings.php $diff");
+
         ?>
     </head>
 <body>       
     <h3>Welcome <?php echo $player; ?></h3><br>
     <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
     <h4>You set your difficulty to <?php echo $diff; ?></h4><br><br>
-
-
-<?php
-    $final_score = shell_exec("php /home/xavier/php/settings.php $diff");
-    echo "<h4>Your final score is $final_score</h4>";
-?>  
-
+    <h4>Your final score is:<?php echo $final_score; ?></h4>
+    
 </body>
 </html>

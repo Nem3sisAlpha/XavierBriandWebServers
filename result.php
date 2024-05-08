@@ -30,10 +30,8 @@
 
 <?php
     $final_score = shell_exec("php /home/xavier/php/settings.php $diff");
+    echo "<h4>Your final score is $final_score</h4>";
+?>  
 
-?>
-
-    <h4>Your final score is:<?php echo $final_score; ?></h4>
-    
 </body>
 </html>

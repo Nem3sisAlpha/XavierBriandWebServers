@@ -32,9 +32,6 @@
     <h4>You are given <?php echo $timegiven; ?> x100 milliseconds, for a grand total of <?php echo $give_res = $timegiven * 100; ?> to recreate the pattern</h4><br>
     <h4>You will have a squence of <?php echo $maxpatt; ?> patterns</h4><br><br>
     
-    
-    
-
 <?php
 
     $final_score = shell_exec("php /home/xavier/php/custom_settings.php $diff $timeint $timegiven $maxpatt");
@@ -43,6 +40,5 @@
     
     <h4>Your final score is:<?php echo $final_score; ?></h4>
     
-
 </body>
 </html>

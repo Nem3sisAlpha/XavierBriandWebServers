@@ -30,7 +30,7 @@
 </body>
 
 <?php
-    exec("sh test.sh");
+    exec("sh /home/xavier/php/test.sh");
 
 ?>
 

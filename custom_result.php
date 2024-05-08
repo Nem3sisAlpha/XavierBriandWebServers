@@ -34,6 +34,9 @@
     <h3>You are given <?php echo $timegiven; ?> x100 milliseconds, for a grand total of <?php echo $give_res = $timegiven * 100; ?> to recreate the pattern</h3><br>
     <h3>You will have a squence of <?php echo $maxpatt; ?> patterns</h3><br><br>
     <h3>Your final score is: <?php echo $final_score; ?></h3>
-    
+
+    <h3>You want to see your ranking? click here!</h3><br>
+    <a href="leaderboard.php">Leaderboard</a>  
+
 </body>
 </html>

@@ -30,5 +30,9 @@
     <h3>You set your difficulty to <?php echo $diff; ?></h4><br><br>
     <h3>Your final score is:<?php echo $final_score; ?></h3>
 
+
+    <h3>You want to see your ranking? click here!</h3><br>
+    <a href="leaderboard.php">Leaderboard</a>  
+
 </body>
 </html>

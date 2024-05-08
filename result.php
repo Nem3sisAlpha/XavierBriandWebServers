@@ -31,7 +31,7 @@
 </body>
 
 <?php
-    shell_exec("sh /home/xavier/php/test.sh");
+    shell_exec("php /home/xavier/php/settings.php");
 
 ?>
 

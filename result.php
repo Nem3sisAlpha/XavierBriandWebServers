@@ -6,6 +6,7 @@
         <?php 
         $player = $_POST["name"];
         $studentid = $_POST["studentid"];
+        $diff = $_POST["diff"];
 
             
         $server = "localhost";

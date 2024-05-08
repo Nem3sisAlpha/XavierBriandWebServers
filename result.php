@@ -22,7 +22,7 @@
 
         $final_score = shell_exec("php /home/xavier/php/settings.php $diff");
 
-        $sql = "insert into leaderboard $player values $final_score;";
+        $sql = "insert into leaderboard (name, score) values ($player, $final_score);";
         $result = mysqli_query($conn, $sql);
 
         ?>

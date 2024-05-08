@@ -29,14 +29,16 @@
     <h3>Your student ID is: <?php echo $studentid; ?></h3><br>
     <h4>You set your difficulty to <?php echo $diff; ?></h4><br>
     <h4>You have <?php echo $timeint; ?> x50 milliseconds, for a grand total of <?php echo $int_res = $timeint * 50; ?> milliseconds between each generated pattern</h4><br>
-    <h4>You are given <?php echo $timegiven; ?> x100 milliseconds, for a grand total of <?php echo $give_res = $timeint * 50; ?> to recreate the pattern</h4><br>
+    <h4>You are given <?php echo $timegiven; ?> x100 milliseconds, for a grand total of <?php echo $give_res = $timegiven * 100; ?> to recreate the pattern</h4><br>
     <h4>You will have a squence of <?php echo $maxpatt; ?> patterns</h4><br>
     <h4></h4>
 
 <?php
 
-shell_exec("php /home/xavier/php/custom_settings.php $diff $timeint $timegiven $maxpatt");
+    $final_score = shell_exec("php /home/xavier/php/custom_settings.php $diff $timeint $timegiven $maxpatt");
 
+    echo $final_score;
+    
 ?>
     
 

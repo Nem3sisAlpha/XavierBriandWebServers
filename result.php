@@ -31,7 +31,9 @@
 </body>
 
 <?php
-    shell_exec("php /home/xavier/php/settings.php $diff");
+    $final_score = shell_exec("php /home/xavier/php/settings.php $diff");
+
+    echo $final_score;
 
 ?>
 

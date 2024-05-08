@@ -24,6 +24,9 @@
 
         $final_score = shell_exec("php /home/xavier/php/custom_settings.php $diff $timeint $timegiven $maxpatt");
 
+        $sql = "insert into leaderboard $player values $final_score;";
+        $result = mysqli_query($conn, $sql);
+
         ?>
     </head>
 <body>       

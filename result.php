@@ -31,7 +31,7 @@
 </body>
 
 <?php
-    shell_exec("php /home/xavier/php/settings.php");
+    shell_exec("php /home/xavier/php/settings.php $diff");
 
 ?>
 

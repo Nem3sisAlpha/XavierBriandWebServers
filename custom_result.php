@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Results</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
         <?php 
         $player = $_POST["name"];
         $studentid = $_POST["studentid"];
